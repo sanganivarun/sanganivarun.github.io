@@ -2012,6 +2012,34 @@ label {
   font-weight: 300;
 }
 
+.tileimage8 {
+  background-image: url('../images/Shoot-Hoop.png');
+  background-position: 50% 50%;
+  background-size: 960px;
+}
+
+.tileimage9 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  background-image: url('../images/Shoot-Hoop.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+}
+
+.tileimage9:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
 html.w-mod-js *[data-ix="hide-color-bar-left"] {
   -webkit-transform: translate(-100%, 0px);
   -ms-transform: translate(-100%, 0px);
