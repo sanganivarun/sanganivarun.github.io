@@ -5001,7 +5001,10 @@ function createInstance(options) {
 }
 
 function removeInstance(instance, store) {
-  dispatchCustomEvent(document.body, 'ix2-animation-stopping', instance.id);
+  dispatchCustomEvent(document.body, 'ix2-animation-stopping', {
+    instanceId: instance.id,
+    state: store.getState()
+  });
   Object(__WEBPACK_IMPORTED_MODULE_10__IX2VanillaUtils__["a" /* cleanupInstance */])(instance, __WEBPACK_IMPORTED_MODULE_13__IX2BrowserApi__);
   store.dispatch(Object(__WEBPACK_IMPORTED_MODULE_12__actions_IX2EngineActions__["instanceRemoved"])(instance.id));
 }
