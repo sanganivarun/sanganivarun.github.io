@@ -13,8 +13,13 @@
         <a-entity position="0 .6 4">
           <a-camera>
             <a-entity id="mycursor" cursor="fuse: true; fuseTimeout: 500; max-distance: 30;"
-            position="0 -1 -5"
-            geometry="primitive: sphere; radius:0.5"
+            position="-2.5 1 -10"
+            geometry="primitive: sphere; radius:0.35"
+            material="color: green; shader: flat">
+            </a-entity>
+            <a-entity id="mycursor1" cursor="fuse: true; fuseTimeout: 500; max-distance: 30;"
+            position="-10 0 0"
+            geometry="primitive: sphere; radius:0.35"
             material="color: red; shader: flat">
             </a-entity>
           </a-camera>
@@ -26,6 +31,10 @@
     document.querySelector('#mycursor').addEventListener('click', function() {
         // Refresh stuff would go here!
         document.location.href = 'mainCampus.html';
+    });
+    document.querySelector('#mycursor1').addEventListener('click', function() {
+        // Refresh stuff would go here!
+        document.location.href = 'triangularPark.html';
     });
 </script>
 </html>

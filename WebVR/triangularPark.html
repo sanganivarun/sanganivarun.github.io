@@ -36,6 +36,11 @@
             <a-entity id="mycursor4" cursor="fuse: true; fuseTimeout: 500; max-distance: 30;"
             position="-10 0 -1"
             geometry="primitive: sphere; radius:0.35"
+            material="color: orange; shader: flat;">
+            </a-entity>
+            <a-entity id="mycursor5" cursor="fuse: true; fuseTimeout: 500; max-distance: 30;"
+            position="-10 0 -5"
+            geometry="primitive: sphere; radius:0.35"
             material="color: pink; shader: flat;">
             </a-entity>
           </a-camera>
@@ -63,6 +68,10 @@
     document.querySelector('#mycursor4').addEventListener('click', function() {
         // Refresh stuff would go here!
         document.location.href = 'sportsComplex.html  ';
+    });
+    document.querySelector('#mycursor5').addEventListener('click', function() {
+        // Refresh stuff would go here!
+        document.location.href = 'mainGate.html  ';
     });
 </script>
 </html>
