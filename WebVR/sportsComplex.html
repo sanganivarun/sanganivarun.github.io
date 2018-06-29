@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head src = "aframe/temp.js">
+    <meta charset="utf-8">
+    <title>BPDC Tour - Sports Complex</title>
+    <meta name="description" content="Hello, World! • A-Frame">
+    <script src="aframe/aframe.js"></script>
+  </head>
+  <body>
+    <div style="width: 400px;">
+      <a-scene>
+        <a-sky src="sportsComplex.jpg" rotation="0 -130 0"></a-sky>           
+        <a-entity position="0 .6 4">
+          <a-camera>
+            <a-entity id="mycursor" cursor="fuse: true; fuseTimeout: 500; max-distance: 30;"
+            position="-2.85 -0.30 -5"
+            geometry="primitive: sphere; radius:0.30"
+            material="color: green; shader: flat;">
+            </a-entity>
+            <a-entity id="mycursor" cursor="fuse: true; fuseTimeout: 500; max-distance: 30;"
+            position="-11 -.3 0.5"
+            geometry="primitive: sphere; radius:0.35"
+            material="color: red; shader: flat;">
+            </a-entity>
+          </a-camera>
+        </a-entity>
+      </a-scene>
+    </div>
+  </body>
+  <script>
+    document.querySelector('#mycursor').addEventListener('click', function() {
+        // Refresh stuff would go here!
+        document.location.href = 'triangularPark.html';
+    });
+    document.querySelector('#mycursor').addEventListener('click', function() {
+        // Refresh stuff would go here!
+        document.location.href = 'mainCampus.html';
+    });
+</script>
+</html>
